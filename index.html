@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariha | Frontend Developer | HTML CSS | Data Entry & Web Research Expert</title>
+<style>
+:root{--bg:#0b0b14;--bg2:#12121f;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.1);--text:#f2f2f8;--muted:#a3a3bd;--a:#8b5cf6;--b:#22d3ee;--g:#22c55e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f5f4ff;--bg2:#ebe9fb;--card:rgba(255,255,255,.8);--line:rgba(0,0,0,.09);--text:#16162a;--muted:#5d5d78}}
+:root[data-theme="light"]{--bg:#f5f4ff;--bg2:#ebe9fb;--card:rgba(255,255,255,.8);--line:rgba(0,0,0,.09);--text:#16162a;--muted:#5d5d78}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"Segoe UI",system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:.9rem}
+nav a:hover{color:var(--text)}
+.hero{position:relative;padding:90px 0 70px;text-align:center;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;animation:float 9s ease-in-out infinite}
+.b1{width:320px;height:320px;background:var(--a);top:-60px;left:-80px}
+.b2{width:280px;height:280px;background:var(--b);bottom:-60px;right:-60px;animation-delay:-4s}
+@keyframes float{50%{transform:translate(30px,25px)}}
+.hero .wrap{position:relative}
+.hi{color:var(--b);font-weight:600;letter-spacing:2px;font-size:.85rem;text-transform:uppercase}
+h1{font-size:clamp(2.4rem,7vw,4rem);line-height:1.1;margin:12px 0}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{color:var(--muted);font-size:1.05rem;max-width:640px;margin:0 auto}
+.btns{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:13px 26px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:linear-gradient(90deg,var(--a),#6366f1);box-shadow:0 8px 24px rgba(139,92,246,.4);transition:.25s}
+.btn:hover{transform:translateY(-3px)}
+.btn.o{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:48px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.stat b{display:block;font-size:1.5rem;color:var(--b)}
+.stat span{color:var(--muted);font-size:.85rem}
+section{padding:60px 0}
+section.alt{background:var(--bg2)}
+.eyebrow{color:var(--a);font-weight:700;font-size:.8rem;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:2rem;margin:6px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:transform .2s,border-color .25s;transform-style:preserve-3d;will-change:transform}
+.card:hover{border-color:var(--a)}
+.card h3{margin-bottom:6px;font-size:1.1rem}
+.card p{color:var(--muted);font-size:.93rem}
+.ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:14px;background:linear-gradient(135deg,var(--a),var(--b))}
+.mock{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-bottom:16px;background:var(--bg)}
+.bar{height:22px;background:rgba(127,127,160,.2);display:flex;gap:5px;align-items:center;padding:0 10px}
+.bar i{width:7px;height:7px;border-radius:50%;background:rgba(127,127,160,.6)}
+.scr{height:130px;padding:14px;display:flex;flex-direction:column;gap:8px;justify-content:center}
+.scr em{display:block;height:10px;border-radius:5px;background:rgba(255,255,255,.75)}
+.scr em:nth-child(1){width:60%;height:14px}.scr em:nth-child(2){width:85%;opacity:.6}.scr em:nth-child(3){width:35%;height:20px;border-radius:10px;margin-top:6px}
+.p1{background:linear-gradient(135deg,#f472b6,#fb923c)}.p2{background:linear-gradient(135deg,#8b5cf6,#d946ef)}.p3{background:linear-gradient(135deg,#0ea5a4,#38bdf8)}.p5{background:linear-gradient(135deg,#f59e0b,#0ea5e9)}.p4{background:linear-gradient(135deg,#111827,#6b7280)}a.vbtn{text-decoration:none}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.tag{font-size:.75rem;padding:4px 11px;border-radius:999px;background:rgba(139,92,246,.15);color:var(--a);font-weight:600}
+.skill{margin-bottom:16px}
+.skill div{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:6px}
+.track{height:8px;border-radius:8px;background:var(--line);overflow:hidden}
+.fill{height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--a),var(--b));transition:width 1.2s ease}
+.show .fill{width:var(--w)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:360px}
+th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+.bad td{color:var(--muted)}.ok{color:var(--g)}
+.steps{counter-reset:s}
+.steps .card::before{counter-increment:s;content:"0" counter(s);font-size:2rem;font-weight:800;color:var(--a);display:block;margin-bottom:6px}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px}
+.cta{text-align:center;padding:80px 0}
+.cta h2{margin-bottom:10px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.rv.show{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.blob{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (max-width:560px){nav a:nth-child(n+3){display:none}}
+
+.vbtn{margin-top:14px;display:inline-block;padding:9px 18px;border-radius:999px;border:0;cursor:pointer;font-weight:700;color:#fff;background:linear-gradient(90deg,var(--a),#6366f1);font-size:.85rem}
+#ov{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.85);display:none;flex-direction:column}
+#ov.on{display:flex}
+#ovb{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));color:#fff;font-size:.9rem}
+#ovb button{background:#fff;color:#111;border:0;border-radius:999px;padding:8px 18px;font-weight:700;cursor:pointer}
+#fr{flex:1;border:0;background:#fff;width:100%}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><div class="logo">Mariha</div><div><a href="#services">Services</a><a href="#work">Work</a><a href="#data">Data Entry</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap">
+<div class="hi">Hello, I’m Mariha</div>
+<h1>Frontend Developer<br><span>&amp; Data Entry Expert</span></h1>
+<p class="role">Frontend Developer | HTML CSS | Data Entry &amp; Web Research Expert. I build clean, responsive websites and deliver accurate, well-organized data.</p>
+<div class="btns"><a class="btn" href="#work">View My Work</a><a class="btn o" href="#contact">Hire Me</a></div>
+<div class="stats"><div class="stat"><b>5</b><span>Website projects</span></div><div class="stat"><b>HTML5 + CSS3</b><span>Responsive builds</span></div><div class="stat"><b>Excel + Sheets</b><span>Data work</span></div><div class="stat"><b>Freelance</b><span>Open for projects</span></div></div>
+</div></header>
+
+<section id="services"><div class="wrap">
+<div class="eyebrow rv">What I do</div><h2 class="rv">Services</h2>
+<div class="grid">
+<div class="card tilt rv"><div class="ico">💻</div><h3>Frontend Development</h3><p>Figma designs converted to responsive HTML/CSS: business sites, landing pages and online stores.</p></div>
+<div class="card tilt rv"><div class="ico">📊</div><h3>Data Entry</h3><p>PDF, Word and image data typed into Excel or Google Sheets, double-checked before delivery.</p></div>
+<div class="card tilt rv"><div class="ico">🧹</div><h3>Data Cleaning</h3><p>Duplicates removed, names and phone numbers standardized, messy sheets made tidy.</p></div>
+<div class="card tilt rv"><div class="ico">🔎</div><h3>Web Research</h3><p>Lead lists, product details and contact data collected into organized sheets.</p></div>
+</div></div></section>
+
+<section id="work" class="alt"><div class="wrap">
+<div class="eyebrow rv">Selected projects</div><h2 class="rv">Web Projects</h2>
+<div class="grid">
+<div class="card tilt rv"><div class="mock"><div class="bar"><i></i><i></i><i></i></div><div class="scr p4"><em></em><em></em><em></em></div></div><h3>FOTOLAB Photography</h3><p>Multi-page photography site with camera, lens and studio categories, events, testimonials and contact page.</p><a class="vbtn" href="https://mariha-png.github.io/sample_project/" target="_blank" rel="noopener">View Live Site ↗</a><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Multi-page</span><span class="tag">Live</span></div></div>
+<div class="card tilt rv"><div class="mock"><div class="bar"><i></i><i></i><i></i></div><div class="scr p5"><em></em><em></em><em></em></div></div><h3>SmartTravel</h3><p>Multi-page travel and tour website with trip catalog, gallery, reviews, FAQ, feedback and contact pages.</p><a class="vbtn" href="https://mariha-png.github.io/project_techwiz/" target="_blank" rel="noopener">View Live Site ↗</a><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Multi-page</span><span class="tag">Live</span></div></div>
+<div class="card tilt rv"><div class="mock"><div class="bar"><i></i><i></i><i></i></div><div class="scr p1"><em></em><em></em><em></em></div></div><h3>Sugar Rose</h3><p>Home bakery website with product gallery and one-tap WhatsApp ordering.</p><button class="vbtn" data-k="sr">View Project →</button><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div></div>
+<div class="card tilt rv"><div class="mock"><div class="bar"><i></i><i></i><i></i></div><div class="scr p2"><em></em><em></em><em></em></div></div><h3>Noor Boutique</h3><p>Fashion store site with catalogue, categories and a mobile-first layout.</p><button class="vbtn" data-k="nb">View Project →</button><div class="tags"><span class="tag">E-commerce</span><span class="tag">UI</span><span class="tag">Mobile</span></div></div>
+<div class="card tilt rv"><div class="mock"><div class="bar"><i></i><i></i><i></i></div><div class="scr p3"><em></em><em></em><em></em></div></div><h3>CareFirst</h3><p>Clinic landing page with services, timings and an appointment button.</p><button class="vbtn" data-k="cf">View Project →</button><div class="tags"><span class="tag">Landing Page</span><span class="tag">UI</span></div></div>
+</div></div></section>
+
+<section id="data"><div class="wrap">
+<div class="eyebrow rv">Sample work</div><h2 class="rv">Data Cleaning: Before &amp; After</h2>
+<div class="cols">
+<div class="card rv"><h3>Before (messy)</h3><div class="scroll"><table class="bad"><tr><th>Name</th><th>Phone</th><th>City</th></tr><tr><td>ali  khan</td><td>0300-1234567</td><td>karachi</td></tr><tr><td>SARA AHMED</td><td>03211234567</td><td>Lahore </td></tr><tr><td>ali khan</td><td>0300 1234567</td><td>Karachi</td></tr></table></div></div>
+<div class="card rv"><h3>After (clean)</h3><div class="scroll"><table><tr><th>Name</th><th>Phone</th><th>City</th></tr><tr><td>Ali Khan</td><td>0300-1234567</td><td>Karachi</td></tr><tr><td>Sara Ahmed</td><td>0321-1234567</td><td>Lahore</td></tr><tr><td colspan="3" class="ok">✓ 1 duplicate removed, formats standardized</td></tr></table></div></div>
+</div>
+<p class="note">Sample uses dummy data only. No real client information is shown.</p>
+</div></section>
+
+<section class="alt"><div class="wrap"><div class="cols">
+<div class="rv"><div class="eyebrow">Skills</div><h2>Tools I Use</h2>
+<div class="skill"><div><span>HTML5 / CSS3</span><span>Strong</span></div><div class="track"><div class="fill" style="--w:85%"></div></div></div>
+<div class="skill"><div><span>Excel / Google Sheets</span><span>Strong</span></div><div class="track"><div class="fill" style="--w:90%"></div></div></div>
+<div class="skill"><div><span>Web Research</span><span>Strong</span></div><div class="track"><div class="fill" style="--w:88%"></div></div></div>
+<div class="skill"><div><span>Figma to HTML</span><span>Good</span></div><div class="track"><div class="fill" style="--w:75%"></div></div></div></div>
+<div class="rv"><div class="eyebrow">Process</div><h2>How I Work</h2>
+<div class="steps"><div class="card" style="margin-bottom:12px"><h3>Understand</h3><p>We agree on scope, format and deadline.</p></div><div class="card" style="margin-bottom:12px"><h3>Deliver</h3><p>I complete the work and double-check every file.</p></div><div class="card"><h3>Revise</h3><p>Free tweaks until you are happy.</p></div></div></div>
+</div></div></section>
+
+<div class="cta" id="contact"><div class="wrap rv"><h2>Let’s Work Together</h2><p class="role">Need a website or clean, accurate data? Send me a message.</p><div class="btns"><a class="btn" href="https://www.upwork.com/freelancers/~01e4009ed82efdcb25" target="_blank" rel="noopener">Message Me on Upwork</a></div></div></div>
+<footer>© Mariha · Frontend Developer &amp; Data Entry Expert</footer>
+
+<script>
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+document.querySelectorAll('.tilt').forEach(function(c){
+c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*10+'deg) rotateX('+(-y*10)+'deg) translateY(-4px)'});
+c.addEventListener('mouseleave',function(){c.style.transform=''})});
+</script>
+<div id="ov"><div id="ovb"><span id="ovt"></span><button id="ovc">✕ Close</button></div><iframe id="fr" title="Project preview"></iframe></div>
+<script>
+var base='*{box-sizing:border-box;margin:0;padding:0}body{font-family:Georgia,serif;color:#222;line-height:1.6}header{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;position:sticky;top:0;background:#fff;box-shadow:0 2px 10px #0001}header b{font-size:1.3rem}header span{font-size:.85rem;color:#666}.h{padding:70px 22px;text-align:center;color:#fff}.h h1{font-size:2.3rem;margin-bottom:10px}.h p{max-width:480px;margin:0 auto 20px}.btn{display:inline-block;padding:12px 24px;border-radius:30px;background:#25d366;color:#fff;text-decoration:none;font-family:Arial;font-weight:700}.s{padding:40px 22px;max-width:900px;margin:auto}.s h2{text-align:center;margin-bottom:22px}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.c{border:1px solid #eee;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px #0001}.c i{display:block;height:110px;font-style:normal;font-size:3rem;text-align:center;line-height:110px}.c div{padding:14px}.c h3{font-size:1.05rem}.c small{color:#777}.c em{display:block;color:#b45309;font-style:normal;font-weight:700;margin-top:4px}footer{text-align:center;padding:26px;background:#222;color:#ccc;font-family:Arial;font-size:.85rem}';
+function page(name,sub,grad,hero,sub2,btn,secT,items,bg){
+return '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>'+base+'.h{background:'+grad+'}.c i{background:'+bg+'}</style></head><body><header><b>'+name+'</b><span>'+sub+'</span></header><div class="h"><h1>'+hero+'</h1><p>'+sub2+'</p><a class="btn" href="javascript:void(0)">'+btn+'</a></div><div class="s"><h2>'+secT+'</h2><div class="g">'+items.map(function(x){return '<div class="c"><i>'+x[0]+'</i><div><h3>'+x[1]+'</h3><small>'+x[2]+'</small><em>'+x[3]+'</em></div></div>'}).join('')+'</div></div><footer>Sample project by Mariha · '+name+'</footer></body></html>'}
+var P={
+sr:['Sugar Rose · Home Bakery',page('Sugar Rose','Home Bakery','linear-gradient(135deg,#f472b6,#fb923c)','Freshly baked with love','Custom cakes, cupcakes and cookies made at home. Order in one tap on WhatsApp.','Order on WhatsApp','Our Bestsellers',[['🎂','Custom Cake','Birthday & occasions','From Rs. 2,500'],['🧁','Cupcakes Box','Box of 6','Rs. 1,200'],['🍪','Cookie Jar','Chocolate chip','Rs. 900']],'#fff1f2')],
+nb:['Noor Boutique · Fashion Store',page('Noor Boutique','Women’s Fashion','linear-gradient(135deg,#8b5cf6,#d946ef)','New Season Collection','Elegant lawn, formal and casual wear. Browse, pick and order directly on WhatsApp.','Shop on WhatsApp','New Arrivals',[['👗','Lawn Suit','3-piece, printed','Rs. 4,800'],['🥻','Formal Dress','Embroidered','Rs. 9,500'],['🧕','Silk Hijab','Assorted colors','Rs. 1,500']],'#faf5ff')],
+cf:['CareFirst · Clinic',page('CareFirst Clinic','Your health, our care','linear-gradient(135deg,#0ea5a4,#38bdf8)','Caring for you and your family','Experienced doctors, clear timings and easy appointments. Book in one tap.','Book Appointment','Our Services',[['🩺','General Checkup','Mon – Sat','9am – 5pm'],['🦷','Dental Care','Mon, Wed, Fri','2pm – 7pm'],['👶','Child Specialist','Tue, Thu','4pm – 8pm']],'#ecfeff')]};
+var ov=document.getElementById('ov'),fr=document.getElementById('fr');
+document.querySelectorAll('.vbtn').forEach(function(b){b.addEventListener('click',function(){var d=P[b.dataset.k];document.getElementById('ovt').textContent=d[0]+' (sample project)';fr.srcdoc=d[1];ov.classList.add('on')})});
+document.getElementById('ovc').addEventListener('click',function(){ov.classList.remove('on');fr.srcdoc=''});
+</script>
+</body>
+</html>
